@@ -18,3 +18,5 @@ print(finData.json()['dataset'])
 
 directionsData=requests.get("https://maps.googleapis.com/maps/api/directions/json?origin=Bangalore&destination=Pune",verify=False)
 print(directionsData.json()['routes'][0]['bounds'])
+
+# Try https://restcountries.eu/
