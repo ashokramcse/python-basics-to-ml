@@ -25,3 +25,23 @@ def listofholidays():
 import datetime
 def getcurrenttime():
     return datetime.datetime.now()
+
+# Here in Python everything is reference.
+'''
+Scope
+'''
+amount = "100"
+amt = "20"
+
+def testscope():
+    amount = "10"
+    global amt
+    amt="100"
+    print ("Amount :" + amount)
+    print ("amt :" + amt)
+
+print ("Amount :" + amount)
+print ("amt :" + amt)
+testscope()
+print ("Amount :" + amount)
+print ("amt :" + amt)
