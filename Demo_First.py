@@ -24,3 +24,13 @@ print (bin(10))
 
 #Binary to Decimal
 print (int("1010", 2))
+
+# Center Justification
+orgName="CITI"
+print(orgName.center(len(orgName)+20, "*"))
+
+# Left and Right Justification
+print(orgName.ljust(len(orgName)+20, "*"))
+print(orgName.rjust(len(orgName)+20, "*"))
+amount = "1234"
+print(amount.rjust(len(amount)+20, " "))
