@@ -31,7 +31,7 @@ doc = minidom.parse("citrixcustomerdata.xml")
 routers=doc.getElementsByTagName("Customers")
 
 for router in routers:
-    print(router.getElementsByTagName("Customers")[0].firstChild.data)
-    interfaceData=router.getElementsByTagName("AccountNo")
+    print(router.getElementsByTagName("Customer")[0].firstChild.data)
+    interfaceData=router.getElementsByTagName("Account")
     for interface in interfaceData:
         print(interface.getElementsByTagName("AccountNo")[0].firstChild.data)
