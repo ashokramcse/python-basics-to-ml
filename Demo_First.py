@@ -95,7 +95,6 @@ print(((",").join(list1)).split(","))
 data = (56, "Ashok", "Chennai")
 data1 = (57, "Ashok", "Chennai")
 
-print(data.__add__(data1))
 print(data)
 
 #Dictonary
@@ -116,3 +115,39 @@ print(cust.values())
 
 for(key, value) in cust.items():
     print(key, value)
+
+#Double underscore leading and trainling, It will create a module or sub-module
+if __name__ =="__main__":
+    print("In Main module")
+else:
+    print("Not in Main Module")
+
+# Functions    
+def get_data():
+    print ("Inside Function")
+
+# Invoke the function
+get_data()
+
+# Calling function from other Modules.
+# It will work only when the module is within the same folder.
+import Function_Lib
+Function_Lib.get_data_using_fun_lib()
+
+# Calling function from other Modules.
+# Sys Module helps us to add modules via path
+# import Function_Lib
+# sys.path.append("C:/Users/RPS/Desktop/Ashok/")
+# Function_Lib.get_data_using_fun_lib()
+
+def get_data(num):
+    print ("Inside Function and my parameter is : %s" %(num))
+
+get_data(10)
+
+# Specific import from external module.
+from Function_Lib import getholiday
+getholiday("10")
+
+from Function_Lib import getcurrenttime
+print (getcurrenttime())
