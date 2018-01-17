@@ -71,3 +71,20 @@ print (idList)
 idList.sort()
 idList.reverse()
 print (idList)
+
+empList = [[1, "Ashok", "Chennai"], [2, "Ram", "Bangalore"]]
+
+for row in empList:
+    for _ in row:
+        if (_ is "Chennai"):
+            print (row[1])
+            
+list1 = ["Chennai", "Bangalore"]
+list2 = ["TN", "KA"]
+
+for (x,y) in zip(list1, list2):
+    print (x, ","+y)
+    
+#Join & Split Operation
+print ((",").join(list1))
+print (((",").join(list1)).split(","))
