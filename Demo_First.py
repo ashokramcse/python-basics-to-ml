@@ -34,3 +34,16 @@ print(orgName.ljust(len(orgName)+20, "*"))
 print(orgName.rjust(len(orgName)+20, "*"))
 amount = "1234"
 print(amount.rjust(len(amount)+20, " "))
+
+"""
+Sequence Number generator
+"""
+
+import base64
+seqNo = 456
+
+data = base64.b64encode(str(seqNo).encode(encoding = 'utf-8', errors='strict'))
+print("Converted Data is : %s \n" %(data))
+
+for _d in data[0:]:
+    print(chr(int(_d)), end="")
