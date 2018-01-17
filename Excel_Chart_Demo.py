@@ -3,7 +3,7 @@
 Created on Wed Jan 17 02:55:51 2018
 
 """
-
+# Run Excel_Demo.py before running this.
 from openpyxl import  load_workbook
 from openpyxl.chart import(AreaChart,
     Reference,
