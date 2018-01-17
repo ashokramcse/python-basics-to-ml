@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<Customers>
+  <Customer CustomerId="12345">
+    <Account>
+      <AccountNo>4334645</AccountNo>
+    </Account>
+  </Customer>
+</Customers>
