@@ -38,7 +38,6 @@ print(amount.rjust(len(amount)+20, " "))
 """
 Sequence Number generator
 """
-
 import base64
 seqNo = 456
 
@@ -47,3 +46,28 @@ print("Converted Data is : %s \n" %(data))
 
 for _d in data[0:]:
     print(chr(int(_d)), end="")
+print("\n")
+    
+"""
+List in python is heterogeneous.
+"""
+data = [45,"Ashok", 46.5, "C", True]
+print (data)
+
+for _ in data:
+    if(type(_) is str):
+        print(_)
+        
+"""
+Generate Random Number
+"""
+import random
+idList = []
+
+for _ in range(10):
+    idList.append(random.randint(1,1000))
+    
+print (idList)
+idList.sort()
+idList.reverse()
+print (idList)
