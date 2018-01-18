@@ -34,6 +34,7 @@ var employee={empId:456,name:"Ram",dob:new Date(1991,8,6)};
 
 #Add the created document
 db.employees.insert(employee);
+
 """
 
 from pymongo import MongoClient
@@ -80,21 +81,3 @@ print()
  
 #close the conn to MongoDB
 conn.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
