@@ -1,5 +1,6 @@
 # python-basics-to-ml
 
+parameswaribala@gmail.com
 
 https://www.pega.com/products/pega-7-platform/robotic-automation
 
